@@ -201,7 +201,8 @@ sub _app {
 				'foo' => 1,
 				'favo_bludd' => 'axlotl_tanks',
 				'tleilaxu_master' => 'glossu_rabban',
-			} "platforms" => [1, 2, 3, 4, 5, 6, 7],   # 1 - iOS; 2 - BB; 3 - Android; 4 - Nokia; 5 - Windows Phone; 7 - OS X
+			},
+		"platforms" => [1, 2, 3, 4, 5, 6, 7],   # 1 - iOS; 2 - BB; 3 - Android; 4 - Nokia; 5 - Windows Phone; 7 - OS X
 
 		# WP7 related
 		"wp_type" => "Tile", # WP7 notification type. 'Tile' or 'Toast'. Raw notifications are not supported. 'Tile' is default
