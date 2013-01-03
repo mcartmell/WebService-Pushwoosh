@@ -186,7 +186,7 @@ sub _app {
 
 =head2 create_message
 
-	$pw->create_message(
+	my $message_id = $pw->create_message(
 		# Content settings
 		"send_date" => "now", # YYYY-MM-DD HH => mm  OR 'now'
 		"content" =>
@@ -205,15 +205,15 @@ sub _app {
 			} "platforms" => [1, 2, 3, 4, 5, 6, 7],   # 1 - iOS; 2 - BB; 3 - Android; 4 - Nokia; 5 - Windows Phone; 7 - OS X
 
 		# WP7 related
-		"wp_type" => "Tile", # WP7 notification type. 'Tile' or 'Toast'. Raw notifications are not supported. 'Tile' if default
+		"wp_type" => "Tile", # WP7 notification type. 'Tile' or 'Toast'. Raw notifications are not supported. 'Tile' is default
 		"wp_background" => "/Resources/Red.jpg", # WP7 Tile image
 		"wp_backbackground" => "/Resources/Green.jpg", # WP7 Back tile image
 		"wp_backtitle" => "back title", # WP7 Back tile title
 		"wp_count" => 3, # Optional. Integer. Badge for WP7
 
 		# Android related
-		"android_banner" => "http => #example.com/banner.png",
-		"android_custom_icon" => "http => #example.com/image.png",
+		"android_banner" => "http://example.com/banner.png",
+		"android_custom_icon" => "http://example.com/image.png",
 		"android_icon" => "icon.png",
 		"android_sound" => "soundfile", # Optional. Sound file name in the "res/raw" folder, do not include the extension
 
@@ -649,6 +649,7 @@ sub _post_data {
 		return $status;
 	}
 	else {
+		# error
 		return $status if ($self->{error_mode} eq 'manual');
 		my $error_msg = $Errors{ $args{api_method} }{$code}{ $api_code || 'n/a' };
 		croak "Got error "
