@@ -311,15 +311,15 @@ Valid operators for Integer tags:
 
 =item * EQ: tag value equals operand. Operand must be an integer.
 
-=item * BETWEEN: tag value greater than or equal to min_operand value, and tag value is less than or equal to max operand value. Operand must be an array like: C<[min_value, max_value]>.
+=item * BETWEEN: tag value greater than or equal to min value, and tag value is less than or equal to max value. Operand must be an array like: C<[min_value, max_value]>.
 
 =back
 
-Valid operators for List tags:
+Valid operators for ArrayRef tags:
 
 =over 8
 
-=item * IN: Intersect user values and operand. Operand must be an array of strings like: ["value 1", "value 2", "value "N"].
+=item * IN: Intersect user values and operand. Operand must be an arrayref of strings like: ["value 1", "value 2", "value N"].
 
 =back
 
@@ -444,7 +444,7 @@ Parameters:
 
 =item hwid
 
-Hardware device id used in C<registerDevice> function call
+Hardware device id used in L</register_device> function call
 
 =back
 
@@ -477,7 +477,7 @@ Parameters:
 
 =item hwid 
 
-Hardware device id used in C<registerDevice> function call
+Hardware device id used in L</register_device> function call
 
 =item tags
 
@@ -517,7 +517,7 @@ Parameters:
 
 =item hwid
 
-Hardware device id used in C<registerDevice> function call 
+Hardware device id used in L</register_device> function call 
 
 =item badge
 
@@ -554,7 +554,7 @@ Parameters:
 
 =item hwid
 
-Hardware device id used in C<registerDevice> function call 
+Hardware device id used in L</register_device> function call 
 
 =item hash
 
@@ -592,7 +592,7 @@ Parameters:
 
 =item hwid 
 
-Hardware device id used in C<registerDevice> function call 
+Hardware device id used in L</register_device> function call 
 
 =item lat
 
