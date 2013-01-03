@@ -192,7 +192,6 @@ sub _app {
 		"content" =>
 			{ # Object( language1 =>  'content1', language2 =>  'content2' ) OR string
 			"en" => "English",
-			"ru" => "Русский",
 			"de" => "Deutsch"
 			},
 		"page_id" => 39, # Optional. int
@@ -215,6 +214,7 @@ sub _app {
 		"android_banner" => "http://example.com/banner.png",
 		"android_custom_icon" => "http://example.com/image.png",
 		"android_icon" => "icon.png",
+		"android_root_params" => { "key" => "value" }, # custom key-value object. root level parameters for the android payload
 		"android_sound" => "soundfile", # Optional. Sound file name in the "res/raw" folder, do not include the extension
 
 		#iOS related
@@ -226,7 +226,6 @@ sub _app {
 		"mac_badges" => 3,
 		"mac_sound" => "sound.caf",
 		"mac_root_params" => { "content-available" => 1 },
-		"android_root_params" => { "key" => "value" }, # custom key-value object. root level parameters for the android payload
 
 		 # Recipients
 		"devices" =>
