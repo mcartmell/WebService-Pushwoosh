@@ -1,0 +1,18 @@
+WebService-Pushwoosh
+
+Pushwoosh is a push notification service which provides a JSON API for users of
+its premium account. This module provides a simple Perl wrapper around that
+API.
+
+For information on integrating the Pushwoosh service into your mobile apps, see
+http://www.pushwoosh.com/programming-push-notification/.
+
+LICENSE AND COPYRIGHT
+
+Copyright (C) 2013 Mike Cartmell
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
