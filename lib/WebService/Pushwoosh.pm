@@ -42,7 +42,7 @@ L<https://cp.pushwoosh.com/api_access>.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 CONSTRUCTOR
 
@@ -91,7 +91,7 @@ documentation for the possible error codes.
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp;
 use Furl;
