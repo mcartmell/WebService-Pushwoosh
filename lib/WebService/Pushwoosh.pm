@@ -676,9 +676,7 @@ Mike Cartmell, C<< <mike at mikec.me> >>
 
 Copyright 2013 Mike Cartmell.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 See http://dev.perl.org/licenses/ for more information.
 
